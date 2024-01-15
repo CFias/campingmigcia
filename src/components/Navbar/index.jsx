@@ -7,24 +7,19 @@ export const Navbar = () => {
   return (
     <>
       <header className="header-container">
-        <NavLink to="/" className="header-logo-img">
-          <img src={logo} alt="Logo Mig" className="logo-img" />
-        </NavLink>
         <nav className="nav-container">
           <ul className="nav-content">
             <li>
-              <NavLink to="/rede" className="nav-item2">
+              <NavLink to="/rede" className="nav-item">
                 Instagram
               </NavLink>
             </li>
+            <NavLink to="/" className="header-logo-img">
+              <img src={logo} alt="Logo Mig" className="logo-img" />
+            </NavLink>
             <li>
-              <NavLink to="about" className="nav-item3">
+              <NavLink to="about" className="nav-item">
                 Sobre nós
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/subscribe" className="nav-item1">
-                Inscrições
               </NavLink>
             </li>
           </ul>
