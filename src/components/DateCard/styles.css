@@ -1,0 +1,58 @@
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100vw;
+}
+
+.date-content {
+  background: #3d3d3d;
+  color: white;
+  border-radius: 10px;
+  width: 52vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.date-card-frase {
+  padding: 30px;
+}
+
+.date-frase {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.date-card-time {
+  padding: 30px;
+}
+
+.date-time {
+  font-family: "Montserrat", sans-serif;
+}
+
+.date-card-btn {
+  padding: 30px;
+}
+
+.date-btn {
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+  background: #2b2b2b;
+  border: none;
+  color: #cac6c6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.date-btn:hover {
+    background: #242424;
+    transition: 250ms;
+}
