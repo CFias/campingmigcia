@@ -1,12 +1,12 @@
 .header-container {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.506);
   background: var(--card-color);
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header-logo-img {
@@ -15,23 +15,12 @@
 .logo-img {
   width: 100px;
   transition: 250ms;
-  display: flex;
-}
-
-.logo-img:hover {
-}
-
-.nav-container {
 }
 
 .nav-content {
-  display: flex;
-  align-items: center;
   list-style: none;
-  gap: 30px;
-}
-
-.nav-content:hover {
+  display: flex;
+  gap: 20px;
 }
 
 .nav-item {
@@ -46,7 +35,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav-item-res {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-content,
+  .nav-item {
     display: none;
   }
 
