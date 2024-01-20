@@ -4,13 +4,14 @@
   align-items: center;
   margin-top: 10px;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .date-content {
   background: var(--card-color);
   color: white;
   border-radius: 10px;
-  width: 52vw;
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +29,7 @@
   font-weight: 600;
   font-size: 25px;
   text-align: center;
+  color: var(--font-color);
 }
 
 .date-card-time {
@@ -43,12 +45,12 @@
 }
 
 .date-btn {
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   width: 300px;
-  background: var(--btn-color);
+  background: var(--dest-color);
   border: none;
-  color: #cac6c6;
+  color: var(--font-color);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -56,7 +58,18 @@
 }
 
 .date-btn:hover {
-    background: var(--ext-color);
-    color: var(--card-color);
+    background: var(--bg-color);
+    color: var(--font-color);
     transition: 250ms;
+}
+
+@media screen and (max-width: 768px) { 
+  .date-content {
+    padding: 10px;
+  }
+
+  .date-frase {
+    font-size: 16px;
+  }
+
 }

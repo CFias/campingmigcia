@@ -7,10 +7,10 @@ export const Navbar = () => {
   return (
     <>
       <header className="header-container">
+        <NavLink to="/" className="header-logo-img">
+          <img src={logo} alt="Logo Mig" className="logo-img" />
+        </NavLink>
         <nav className="nav-container">
-          <NavLink to="/" className="header-logo-img">
-            <img src={logo} alt="Logo Mig" className="logo-img" />
-          </NavLink>
           <ul className="nav-content">
             <li className="nav-item-res">
               <NavLink to="/rede" className="nav-item">
