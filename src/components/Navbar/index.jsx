@@ -8,16 +8,16 @@ export const Navbar = () => {
     <>
       <header className="header-container">
         <nav className="nav-container">
+          <NavLink to="/" className="header-logo-img">
+            <img src={logo} alt="Logo Mig" className="logo-img" />
+          </NavLink>
           <ul className="nav-content">
-            <li>
+            <li className="nav-item-res">
               <NavLink to="/rede" className="nav-item">
                 Instagram
               </NavLink>
             </li>
-            <NavLink to="/" className="header-logo-img">
-              <img src={logo} alt="Logo Mig" className="logo-img" />
-            </NavLink>
-            <li>
+            <li className="nav-item-res">
               <NavLink to="about" className="nav-item">
                 Sobre nós
               </NavLink>
