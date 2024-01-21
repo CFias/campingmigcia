@@ -13,7 +13,7 @@ export const Navbar = () => {
         <nav className="nav-container">
           <ul className="nav-content">
             <li className="nav-item-res">
-              <NavLink to="/rede" className="nav-item">
+              <NavLink to="https://www.instagram.com/mig.cia/" className="nav-item">
                 Instagram
               </NavLink>
             </li>

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .header-logo-img {
@@ -15,6 +15,10 @@
 .logo-img {
   width: 100px;
   transition: 250ms;
+}
+
+.nav-container {
+  overflow: hidden;
 }
 
 .nav-content {

@@ -1,0 +1,55 @@
+.footer-container {
+  background: #000;
+}
+
+.footer-content {
+  background: var(--card-color);
+  color: var(--dest-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  height: 150px;
+}
+
+.footer-redes {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-icon {
+  color: var(--font-color);
+}
+
+.footer-cred {
+  width: 100vw;
+  text-align: center;
+}
+
+.footer-name {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 20px;
+  }
+
+  .footer-redes {
+    display: none;
+  }
+
+  .footer-cred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
