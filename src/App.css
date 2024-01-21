@@ -4,5 +4,6 @@
 }
 
 body {
-    background: var(--bg-color);    
+    background: var(--bg-color);
+    overflow-x: hidden;    
 }
