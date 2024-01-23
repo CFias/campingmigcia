@@ -1,0 +1,27 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content {
+    background: var(--card-color);
+    width: 90vw;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.5px solid var(--dest-color);
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-width: 250px;
+}
