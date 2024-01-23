@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import { RedesCard } from "./components/RedesCard";
+import { Carousel } from "./components/Carousel";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <RedesCard />
+        <Carousel />
         <DateCard />
         <Footer />
       </BrowserRouter>
