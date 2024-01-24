@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./styles.css";
 
 export const DateCard = () => {
@@ -9,12 +10,9 @@ export const DateCard = () => {
             Segundo acampamento MIG CIA! <br /> Dias 17, 18 e 19 de Maio.
           </h2>
         </div>
-        <div className="date-card-btn">
-      
-          <button className="date-btn">
-            Inscreva-se
-          </button>
-        </div>
+        <NavLink to="/register" className="date-btn">
+          Inscreva-se
+        </NavLink>
       </div>
     </div>
   );

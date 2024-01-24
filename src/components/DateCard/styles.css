@@ -38,22 +38,21 @@
 }
 
 .date-btn {
-  padding: 10px;
-  border-radius: 10px;
-  width: 300px;
-  background: var(--bg-color);
-  border: 0.5px solid var(--dest-color);
+  text-decoration: none;
+  text-align: center;
   color: var(--font-color);
+  padding: 10px;
+  background: var(--bg-color);
+  width: 40vw;
+  border-radius: 10px;
+  border: 0.5px solid var(--dest-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .date-btn:hover {
   background: var(--dest-color);
-  color: var(--font-color);
-  transition: 250ms;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,7 +65,7 @@
   .date-content {
     display: flex;
     justify-content: center;
-    width: 90vw;
+    width: 80vw;
   }
 
   .date-card-frase {
@@ -76,16 +75,5 @@
 
   .date-frase {
     font-size: 12px;
-  }
-
-  .date-card-btn {
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-  }
-
-  .date-btn {
-    font-size: 12px;
-    width: 100px;
   }
 }
