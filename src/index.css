@@ -1,9 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --bg-color: #0D0D0D;
-    --card-color: #262626;
-    --dest-color: #444141;
-    --btn-color: #585859;
-    --font-color: #e2e2e3;
+  --bg-color: #0d0d0d;
+  --card-color: #262626;
+  --dest-color: #444141;
+  --btn-color: #585859;
+  --font-color: #e2e2e3;
+}
+
+.container {
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+  background: var(--card-color);
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: var(--bg-color);
+  width: 80vw;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid var(--dest-color);
+  color: var(--font-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.426);
+}
+
+.form-card {
+  font-size: 12px;
+}
+
+.form-name {
+  color: rgba(255, 0, 0, 0.662);
+  padding: 5px;
+}
+
+.form-text {
+    padding: 5px;
+    font-weight: 300;
+}
+
+.form-icons {
+    color: var(--font-color);
+    padding: 5px;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.form-title {
+  color: var(--font-color);
+}
+
+.form-in {
+  background: var(--bg-color);
+  color: var(--font-color);
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid var(--dest-color);
+  padding: 5px;
+  width: 70vw;
+}
+
+.form-btn {
+  background: var(--dest-color);
+  width: 73vw;
+  border-radius: 5px;
+  border: 0.5px solid var(--font-color);
+  padding: 7px;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+.form-route {
+  font-size: 12px;
+}
+
+.form-nav {
+  color: rgba(255, 0, 0, 0.662);
 }
