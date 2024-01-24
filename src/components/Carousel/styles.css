@@ -1,27 +1,36 @@
 .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--card-color);
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .carousel-content {
-    background: var(--card-color);
-    width: 90vw;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    border: 0.5px solid var(--dest-color);
-    max-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: var(--bg-color);
+  width: 26vw;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0.5px solid var(--dest-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.261);
 }
 
 .carousel-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-    max-width: 250px;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-content {
+    width: 60vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.261);
+  }
 }
