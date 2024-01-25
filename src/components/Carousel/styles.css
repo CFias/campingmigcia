@@ -1,36 +1,78 @@
-.carousel-container {
+.home-container {
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/imagens/acamp-photo2.png");
+  background-size: cover;
+  width: 100vw;
+  flex-direction: column;
+  gap: 150px;
   align-items: center;
-  background: var(--card-color);
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.home-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.home-date {
+  color: var(--font-color);
   margin-top: 10px;
-  padding: 10px;
 }
 
-.carousel-content {
-  background: var(--bg-color);
-  width: 26vw;
-  padding: 5px;
-  border-radius: 10px;
-  border: 0.5px solid var(--dest-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.261);
+.home-frase {
+  color: var(--font-color);
 }
 
-.carousel-image {
-  display: flex;
-  justify-content: center;
+.frase {
+  font-size: 50px;
 }
 
-.image {
-  max-width: 200px;
+.home-name {
+  color: rgba(255, 0, 0, 0.671);
+  font-size: 40px;
+}
+
+.home-btn {
+  color: var(--font-color);
+  text-decoration: none;
+  background: rgb(149, 14, 14);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.348);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-btn:hover {
+  background: var(--font-color);
+  color: rgb(149, 14, 14);
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-content {
-    width: 60vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.261);
+  .home-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 100px;
   }
+
+  .home-frase {
+  }
+
+  .home-name {
+    text-align: center;
+  }
+
+  .frase {
+    font-size: 20px;
+  }
+
+  
 }

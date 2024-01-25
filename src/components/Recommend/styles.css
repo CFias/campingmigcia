@@ -1,0 +1,82 @@
+.recommend-container {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.recommend-content {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommend-text {
+    text-align: center;
+}
+
+.text-rec {
+    font-weight: 300;
+}
+
+.recommend-in-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100vw;
+    padding: 10px;
+}
+
+.recommend-in {
+    background: var(--card-color);
+    color: var(--font-color);
+    padding: 10px;
+    width: 70vw;
+    border-radius: 5px;
+    border: 0.5 solid var(--dest-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.638);
+}
+
+.recommend-btn {
+    background: brown;
+    color: var(--font-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5 solid var(--dest-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.638);
+    cursor: pointer;
+}
+
+.recommend-btn:hover {
+    background: var(--font-color);
+    color: brown;
+    transition: 250ms;
+}
+
+@media screen and (max-width: 768px) {
+    .recommend-content {
+        margin-top: 300px;
+    }
+
+    .recommend-text {
+        text-align: center;
+    }
+    
+    .text-rec {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .recommend-in-btn {
+        width: 80vw;
+    }
+
+    .recommend-in {
+
+    }
+
+}

@@ -20,10 +20,18 @@ export const Navbar = () => {
           <ul className="nav-content">
             <li className="nav-item-res">
               <NavLink
-                to="https://www.instagram.com/mig.cia/"
+                to="https://www.instagram.com/extraordinarioscia/"
                 className="nav-item"
               >
                 Instagram
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="https://api.whatsapp.com/send?phone=+5571%209631-0768&text=Acamp+Mig+Cia"
+                className="nav-item"
+              >
+                Contato
               </NavLink>
             </li>
             <li className="nav-item-res">
@@ -46,8 +54,9 @@ export const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-btn-logout">
-                <NavLink onClick={logout} className="nav-item">
+                <NavLink onClick={logout} className="nav-item-log">
                   Sair
+                  <Logout />
                 </NavLink>
               </li>
             </ul>
@@ -61,7 +70,7 @@ export const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/login" className="nav-item">
+                <NavLink to="/login" className="nav-item-log">
                   Login
                 </NavLink>
               </li>
