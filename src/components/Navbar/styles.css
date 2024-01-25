@@ -1,19 +1,20 @@
 .header-container {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.506);
-  background: var(--card-color);
   width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  position: absolute;
+  border-bottom: 0.5px solid var(--dest-color);
 }
 
 .header-logo-img {
 }
 
 .logo-img {
-  width: 100px;
+  width: 70px;
   transition: 250ms;
 }
 
@@ -30,12 +31,29 @@
 .nav-item {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
 
 .nav-item:hover {
   color: rgb(204, 203, 203);
+}
+
+.nav-item-log {
+  background: rgb(180, 24, 24);
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.436);
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-log:hover {
+  background: var(--font-color);
+  color: brown;
+  transition: 450ms;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,6 +67,10 @@
   .nav-content,
   .nav-item {
     display: none;
+  }
+
+  .nav-item-mobile {
+    color: var(--font-color);
   }
 
   .logo-img {
