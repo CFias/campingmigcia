@@ -60,7 +60,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 100px;
+    margin-top: 300px;
   }
 
   .home-frase {
