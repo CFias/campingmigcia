@@ -2,19 +2,17 @@
   display: flex;
   background-image: url("../../assets/imagens/acamp-photo2.png");
   background-size: cover;
-  width: 100vw;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
 
 .home-content {
   display: flex;
   align-items: start;
-  justify-content: center;
   flex-direction: column;
   gap: 30px;
-  margin-top: 80px;
+  padding: 200px;
 }
 
 .home-date {
@@ -39,7 +37,6 @@
   text-decoration: none;
   background: rgb(149, 14, 14);
   padding: 10px;
-  margin-bottom: 30px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
@@ -53,32 +50,55 @@
   transition: 250ms;
 }
 
-@media screen and (max-width: 768px) {
-  .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin-top: 10px;
-  }
+.btn-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
 
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-rede {
+  color: var(--font-color);
+}
+
+@media screen and (max-width: 768px) {
   .home-content {
     display: flex;
     justify-content: start;
     align-items: center;
   }
 
-  .home-frase {
-  }
-
   .home-name {
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .frase {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
+  }
+
+  .btn-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .redes {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 5px;
   }
 
   

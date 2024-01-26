@@ -1,12 +1,16 @@
 import { Instagram, WhatsApp } from "@mui/icons-material";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 
 export const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
+        <NavLink to="/" className="header-logo-img">
+          <img src={logo} alt="Logo Mig" className="logo-img" />
+        </NavLink>
         <div className="footer-redes">
           <NavLink
             to="https://www.instagram.com/extraordinarioscia/"

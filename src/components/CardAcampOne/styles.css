@@ -1,0 +1,37 @@
+.acamp-container {
+  background: var(--bg-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--font-color);
+  border: 0.5px solid var(--dest-color);
+  border-radius: 15px;
+  max-width: 75vw;
+  gap: 10px;
+}
+
+.acamp-one {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.acamp-img {
+  background-image: url("../../assets/imagens/acamp-bg.png");
+  background-size: cover;
+  padding: 140px;
+  opacity: 0.5;
+}
+
+.acamp-one-btn {
+  text-decoration: none;
+}
+
+.acamp-btn {
+  padding: 10px;
+  background: brown;
+  color: var(--font-color);
+  border-radius: 5px;
+  font-size: 12px;
+}

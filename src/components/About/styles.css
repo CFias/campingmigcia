@@ -1,0 +1,60 @@
+.about-container {
+  background: var(--bg-color);
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-radius: 15px;
+  padding: 20px;
+  border: 0.5px solid var(--dest-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-text {
+  width: 30vw;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.about-vs {
+  color: brown;
+}
+
+.about-image {
+  background-image: url("../../assets/imagens/acamp-photo-3.png");
+  background-size: cover;
+  width: 30vw;
+  height: 30vh;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.32);
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 70vw;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .about-image {
+    background-size: cover;
+    width: 70vw;
+    padding: 10px;
+  }
+}
