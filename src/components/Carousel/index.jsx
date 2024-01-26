@@ -3,7 +3,6 @@ import "./styles.css";
 import { NavLink } from "react-router-dom";
 import { useAuthValue } from "../../contexts/AuthContext";
 import Recommend from "../Recommend/index";
-import About from "../../pages/About/index";
 
 export const Carousel = () => {
   const { user } = useAuthValue();
@@ -15,7 +14,7 @@ export const Carousel = () => {
         <div className="home-content">
           <div className="home-frase">
             <h2 className="frase">SEGUNDO ACAMPAMENTO</h2>
-            <h1 className="home-name">MIG CIA</h1>
+            <h1 className="home-name">EXTRAORDINÁRIOS CIA</h1>
           </div>
           <div className="home-date">
             <p className="date">DIAS 17, 18 E 19 DE MAIO!</p>
@@ -26,7 +25,6 @@ export const Carousel = () => {
             </NavLink>
           )}
         </div>
-        <About />
       </div>
     </>
   );

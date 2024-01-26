@@ -1,6 +1,5 @@
 .footer-container {
   background: var(--dest-color);
-  margin-top: 300px;
   border-top: 0.5px solid var(--btn-color);
 }
 
