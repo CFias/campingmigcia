@@ -1,7 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-// import { RedesCard } from "./components/RedesCard";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -9,6 +8,8 @@ import { useEffect, useState } from "react";
 import { useAuthentication } from "./hooks/useAuthentication";
 import { onAuthStateChanged } from "firebase/auth";
 import { AuthProvider } from "./contexts/AuthContext";
+import logo from "./assets/imagens/migcia.png";
+
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -23,7 +24,12 @@ function App() {
   }, [auth]);
 
   if (loadingUser) {
-    return <p>Carregando...</p>;
+    return (
+      <div className="loading">
+        <img className="loading-img" src={logo} alt="" />
+        <p className="loading-p">CARREGANDO</p>
+      </div>
+    );
   }
 
   return (

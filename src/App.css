@@ -6,5 +6,23 @@
 
 body {
   overflow-x: hidden;
-  background: red;
+}
+
+.loading {
+  background: var(--bg-color);
+  transition: 500ms;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-img {
+  width: 100px;
+}
+
+.loading-p {
+  color: var(--font-color);
+  font-size: 14px;
 }
