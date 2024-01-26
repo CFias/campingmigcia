@@ -2,17 +2,19 @@
   display: flex;
   background-image: url("../../assets/imagens/acamp-photo2.png");
   background-size: cover;
+  background-position: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .home-content {
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
-  padding: 200px;
+  margin-top: 60px;
 }
 
 .home-date {
@@ -69,9 +71,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home-container {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    margin-top: 50px;
+  }
+
   .home-content {
     display: flex;
-    justify-content: start;
     align-items: center;
   }
 
@@ -100,6 +108,4 @@
     gap: 10px;
     font-size: 5px;
   }
-
-  
 }

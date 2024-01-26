@@ -1,5 +1,5 @@
 .recommend-container {
-    color: aliceblue;
+    color: var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: 100vw;
+    max-width: 50vw;
     padding: 10px;
 }
 
@@ -52,13 +52,14 @@
 
 .recommend-btn:hover {
     background: var(--font-color);
-    color: brown;
+    color: var(--bg-color);
     transition: 250ms;
 }
 
 @media screen and (max-width: 768px) {
     .recommend-content {
-        margin-top: 30px;
+        margin-top: 20px;
+        width: 70vw;
     }
 
     .recommend-text {
@@ -71,11 +72,6 @@
     }
 
     .recommend-in-btn {
-        width: 80vw;
+        width: 75vw;
     }
-
-    .recommend-in {
-
-    }
-
 }
