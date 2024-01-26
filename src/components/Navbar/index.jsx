@@ -45,7 +45,7 @@ export const Navbar = () => {
           <div className="nav-btn">
             <ul className="nav-content">
               <li className="nav-btn-logout">
-                <NavLink onClick={logout} className="nav-item-log">
+                <NavLink onClick={logout} className="nav-item">
                   Sair
                 </NavLink>
               </li>

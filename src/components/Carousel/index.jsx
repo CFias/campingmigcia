@@ -13,8 +13,8 @@ export const Carousel = () => {
   return (
     <>
       <div className="home-container">
-        {user && <Recommend />}
         <div className="home-content">
+          {user && <Recommend />}
           <div className="home-frase">
             <h2 className="frase">SEGUNDO ACAMPAMENTO</h2>
             <h1 className="home-name">EXTRAORDINÁRIOS CIA</h1>
