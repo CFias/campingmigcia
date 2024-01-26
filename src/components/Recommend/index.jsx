@@ -9,7 +9,7 @@ export default function Recommend() {
           <div className="recommend-content">
             <div className="recommend-text">
               <h2 className="text-rec">
-                Paz, queridos! <br /> O que vocês querem no ACAMP MIG Cia 2024 ?
+                Paz, queridos! <br /> O que vocês querem no ACAMP EXTRAORDINÁRIO Cia 2024 ?
               </h2>
             </div>
             <div className="recommend-in-btn">
