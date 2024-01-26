@@ -4,24 +4,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
   color: var(--font-color);
   border: 0.5px solid var(--dest-color);
   border-radius: 15px;
-  max-width: 75vw;
-  gap: 10px;
+  gap: 15px;
+  max-width: 70vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.535);
+}
+
+.acamp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 20vw;
+  padding: 10px;
+  gap: 20px;
+}
+
+.acamp-p {
+  text-align: center;
+  font-size: 14px;
+  max-width: 20vw;
+}
+
+.acamp-btn-desk {
+  color: var(--font-color);
+  background: brown;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.acamp-btn-desk:hover {
+  background: var(--font-color);
+  color: var(--bg-color);
+  transition: 250ms;
 }
 
 .acamp-one {
   font-size: 18px;
-  padding: 20px;
+  max-width: 20vw;
 }
 
 .acamp-img {
   background-image: url("../../assets/imagens/acamp-bg.png");
   background-size: cover;
-  padding: 140px;
+  width: 30vw;
+  height: 30vh;
+  padding: 20px;
   opacity: 0.5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.32);
 }
 
 .acamp-one-btn {
@@ -29,9 +62,53 @@
 }
 
 .acamp-btn {
-  padding: 10px;
-  background: brown;
-  color: var(--font-color);
-  border-radius: 5px;
-  font-size: 12px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .acamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .acamp-content {
+    align-items: center;
+    max-width: 80vw;
+  }
+
+  .acamp-one {
+    font-size: 16px;
+    max-width: 100vw;
+    text-align: center;
+  }
+
+  .acamp-p {
+    font-size: 12px;
+    max-width: 90vw;
+  }
+
+  .acamp-img {
+    background-size: cover;
+    width: 70vw;
+    padding: 10px;
+  }
+
+  .acamp-btn-desk {
+    display: none;
+  }
+
+  .acamp-btn {
+    display: block;
+    padding: 10px;
+    background: brown;
+    color: var(--font-color);
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .acamp-btn:hover {
+    background: var(--font-color);
+    color: var(--bg-color);
+  }
 }

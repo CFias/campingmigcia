@@ -8,6 +8,8 @@
   padding: 20px;
   border: 0.5px solid var(--dest-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
+  max-width: 70vw;
+  margin-top: 100px;
 }
 
 .about-content {
@@ -18,7 +20,7 @@
 }
 
 .about-text {
-  width: 30vw;
+  max-width: 20vw;
   padding: 10px;
   font-size: 12px;
 }
@@ -37,6 +39,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about-container {
+  }
+
   .about-content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -44,16 +49,16 @@
   }
 
   .about-text {
-    width: 70vw;
+    max-width: 70vw;
     text-align: center;
   }
 
   .text {
     font-size: 10px;
+    max-width: 70vw;
   }
 
   .about-image {
-    background-size: cover;
     width: 70vw;
     padding: 10px;
   }
