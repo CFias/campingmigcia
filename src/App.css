@@ -6,5 +6,5 @@
 
 body {
   overflow-x: hidden;
-  background: var(--bg-color);
+  background: red;
 }

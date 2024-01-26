@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  padding: 30px;
 }
 
 .home-content {
@@ -30,14 +30,14 @@
 }
 
 .home-name {
-  color: rgba(255, 0, 0, 0.671);
+  color: brown;
   font-size: 40px;
 }
 
 .home-btn {
   color: var(--font-color);
   text-decoration: none;
-  background: rgb(149, 14, 14);
+  background: brown;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -48,7 +48,7 @@
 
 .home-btn:hover {
   background: var(--font-color);
-  color: rgb(149, 14, 14);
+  color: var(--bg-color);
   transition: 250ms;
 }
 
@@ -72,15 +72,13 @@
 
 @media screen and (max-width: 768px) {
   .home-container {
-    display: flex;
-    align-items: center;
     background-position: center;
-    margin-top: 50px;
   }
 
   .home-content {
     display: flex;
     align-items: center;
+    margin-top: 80px;
   }
 
   .home-name {
