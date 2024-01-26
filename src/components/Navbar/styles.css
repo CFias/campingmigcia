@@ -30,18 +30,18 @@
 }
 
 .nav-item {
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
 
 .nav-item:hover {
-  color: rgb(204, 203, 203);
+  color: brown;
 }
 
 .nav-item-log {
-  background: rgb(180, 24, 24);
+  background: brown;
   text-decoration: none;
   color: var(--font-color);
   padding: 10px;
@@ -53,8 +53,8 @@
 
 .nav-item-log:hover {
   background: var(--font-color);
-  color: brown;
-  transition: 450ms;
+  color: var(--bg-color);
+  transition: 250ms;
 }
 
 .nav-mobile {

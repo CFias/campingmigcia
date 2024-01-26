@@ -1,7 +1,6 @@
 .footer-container {
   background: var(--dest-color);
   border-top: 0.5px solid var(--btn-color);
-  margin-top: 50px;
 }
 
 .footer-content {
@@ -46,16 +45,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer-container {
-    border: none;
-    margin-top: 50px;
-  }
-
   .footer-content {
+    border-top: 0.5px solid var(--dest-color);
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    height: 20px;
+    background: var(--bg-color);
   }
 
   .footer-redes {
