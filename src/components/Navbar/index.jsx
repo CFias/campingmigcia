@@ -60,7 +60,7 @@ export const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/login" className="nav-item-log">
+                <NavLink to="/login" className="nav-item-log nav-item">
                   Login
                 </NavLink>
               </li>
@@ -70,11 +70,13 @@ export const Navbar = () => {
         <div className="nav-mobile">
           {user ? (
             <NavLink className="nav-item-icon" onClick={logout}>
-              <Logout className="nav-item" />
+              <Logout className="nav-item-mobile" />
+              <p className="nav-p">Sair</p>
             </NavLink>
           ) : (
             <NavLink className="nav-item-icon" to="/login">
-              <Login className="nav-item" />
+              <Login className="nav-item-mobile" />
+              <p className="nav-p">Login</p>
             </NavLink>
           )}
         </div>

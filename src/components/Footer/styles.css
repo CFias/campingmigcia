@@ -4,23 +4,22 @@
 }
 
 .footer-content {
-  background: var(--bg-color);
-  color: var(--dest-color);
+  background: var(--card-color);
+  color: var(--btn-color);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 80px;
-  width: 100%;
+  gap: 20px;
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
-  height: 150px;
 }
 
 .footer-redes {
   width: 60vw;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-icon {

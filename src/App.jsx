@@ -1,5 +1,4 @@
 import "./App.css";
-import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 // import { RedesCard } from "./components/RedesCard";
@@ -10,7 +9,6 @@ import { useEffect, useState } from "react";
 import { useAuthentication } from "./hooks/useAuthentication";
 import { onAuthStateChanged } from "firebase/auth";
 import { AuthProvider } from "./contexts/AuthContext";
-import About from "./pages/About";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -35,7 +33,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route
               path="/login"
               element={!user ? <Login /> : <Navigate to="/" />}
