@@ -10,7 +10,6 @@ import { onAuthStateChanged } from "firebase/auth";
 import { AuthProvider } from "./contexts/AuthContext";
 import logo from "./assets/imagens/migcia.png";
 
-
 function App() {
   const [user, setUser] = useState(undefined);
   const { auth } = useAuthentication();

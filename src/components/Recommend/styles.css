@@ -20,6 +20,11 @@
 
 .text-rec {
     font-weight: 300;
+    color: var(--font-color);
+}
+
+.text-span {
+    font-weight: 500;
 }
 
 .recommend-in-btn {
