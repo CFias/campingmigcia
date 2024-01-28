@@ -23,19 +23,18 @@ export default function Todo({
   };
 
   return (
-    <div className="todo-container">
-      {!user && (
-        <span className="todo-span">Alô, liderança! o povo tá querendo!!!</span>
-      )}
-      <div className="todo-content">
-        <input
-          type="text"
-          value={todo.title === "" ? newTitle : todo.title}
-          className="todo-list"
-          onChange={handleChange}
-        />
-        <div className="todo-btn">
-          {/* <button className="btn-complete" onClick={() => toggleComplete(todo)}>
+    <>
+      {user && (
+        <div className="todo-container">
+          <div className="todo-content">
+            <input
+              type="text"
+              value={todo.title === "" ? newTitle : todo.title}
+              className="todo-list"
+              onChange={handleChange}
+            />
+            <div className="todo-btn">
+              {/* <button className="btn-complete" onClick={() => toggleComplete(todo)}>
             <CheckCircle className="todo-icon" />
           </button>
           <button
@@ -44,18 +43,18 @@ export default function Todo({
           >
             <Edit className="todo-icon" />
           </button> */}
-          {/* {user.displayName === "Cleidson Fias" ? (
+              {/* {user && (
             <button
               className="btn-delete"
               onClick={() => handleDelete(todo.id)}
             >
               <Delete className="todo-icon" />
             </button>
-          ) : (
-            <FavoriteBorder />
           )} */}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
