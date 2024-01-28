@@ -9,9 +9,10 @@
 }
 
 .container {
-  height: 90vh;
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background: var(--card-color);
+  background-image: url("./assets/imagens/acamp-photo2.png");
+  background-position: center;
 }
 
 .form-container {
@@ -27,31 +28,21 @@
   flex-direction: column;
   text-align: center;
   background: var(--bg-color);
-  width: 80vw;
-  padding: 10px;
+  padding: 20px;
+  max-width: 60vw;
   border-radius: 10px;
   border: 0.5px solid var(--dest-color);
   color: var(--font-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.426);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.749);
 }
 
 .form-card {
   font-size: 12px;
 }
 
-.form-name {
-  color: rgba(255, 0, 0, 0.662);
-  padding: 5px;
-}
-
 .form-text {
-    padding: 5px;
     font-weight: 300;
-}
-
-.form-icons {
-    color: var(--font-color);
-    padding: 5px;
+    font-size: 14px;
 }
 
 .form-content {
@@ -60,11 +51,13 @@
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .form-title {
   color: var(--font-color);
+  font-size: 15px;
+  padding: 10px;
 }
 
 .form-in {
@@ -74,17 +67,23 @@
   border-radius: 5px;
   border: 0.5px solid var(--dest-color);
   padding: 5px;
-  width: 70vw;
+  width: 30vw;
 }
 
 .form-btn {
-  background: var(--dest-color);
-  width: 73vw;
+  background: brown;
+  width: 31vw;
   border-radius: 5px;
-  border: 0.5px solid var(--font-color);
+  border: none;
   padding: 7px;
   color: var(--font-color);
   font-weight: 700;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: var(--font-color);
+  color: var(--bg-color);
 }
 
 .form-route {

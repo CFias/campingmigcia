@@ -42,15 +42,18 @@ export const Navbar = () => {
           </ul>
         </nav>
         {user ? (
-          <div className="nav-btn">
-            <ul className="nav-content">
-              <li className="nav-btn-logout">
-                <NavLink onClick={logout} className="nav-item">
-                  Sair
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+          <>
+            <div className="nav-btn">
+              <ul className="nav-content">
+                <span className="nav-user-desk">Olá, {user.displayName}</span>
+                <li className="nav-btn-logout">
+                  <NavLink onClick={logout} className="nav-item">
+                    Sair
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </>
         ) : (
           <div className="nav-btn">
             <ul className="nav-content">
@@ -67,16 +70,17 @@ export const Navbar = () => {
             </ul>
           </div>
         )}
+        {user && <span className="nav-user-mob">Olá, {user.displayName}</span>}
         <div className="nav-mobile">
           {user ? (
             <NavLink className="nav-item-icon" onClick={logout}>
               <Logout className="nav-item-mobile" />
-              <p className="nav-p">Sair</p>
+              <span className="nav-p">Sair</span>
             </NavLink>
           ) : (
             <NavLink className="nav-item-icon" to="/login">
               <Login className="nav-item-mobile" />
-              <p className="nav-p">Login</p>
+              <span className="nav-p">Login</span>
             </NavLink>
           )}
         </div>

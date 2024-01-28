@@ -1,8 +1,8 @@
-import { Instagram, LinkedIn, YouTube } from "@mui/icons-material";
 import "../../index.css";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useAuthentication } from "./../../hooks/useAuthentication";
+import logo from "../../assets/imagens/migcia.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -33,7 +33,7 @@ export default function Login() {
     <section className="form-container container">
       <div className="form-card-container">
         <div className="form-card">
-          <h1 className="form-name">MIG CIA</h1>
+          <img src={logo} alt="Logo Mig" className="logo-img" />
           <h2 className="form-text">O nosso segundo acampamento</h2>
         </div>
         <form onSubmit={handleSubmit} className="form-content">
@@ -64,7 +64,7 @@ export default function Login() {
           {loading && <button className="form-btn">Aguarde</button>}
           <p className="form-route">
             Não possui cadastro ?
-            <NavLink className="form-nav" to="/login">
+            <NavLink className="form-nav" to="/register">
               {" "}
               Cadastre-se
             </NavLink>
