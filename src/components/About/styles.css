@@ -8,7 +8,7 @@
   padding: 20px;
   border: 0.5px solid var(--dest-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
-  max-width: 70vw;
+  width: 70vw;
 }
 
 .about-content {

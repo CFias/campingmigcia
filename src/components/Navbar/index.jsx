@@ -4,7 +4,6 @@ import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
 import { useAuthentication } from "../../hooks/useAuthentication";
-import { Login, Logout } from "@mui/icons-material";
 
 export const Navbar = () => {
   const { user } = useAuthValue();
@@ -13,11 +12,11 @@ export const Navbar = () => {
   return (
     <>
       <header className="header-container">
-        <NavLink to="/" className="header-logo-img">
-          <img src={logo} alt="Logo Mig" className="logo-img" />
-        </NavLink>
         <nav className="nav-container">
           <ul className="nav-content">
+            <NavLink to="/" className="header-logo-img">
+              <img src={logo} alt="Logo Mig" className="logo-img" />
+            </NavLink>
             <li className="nav-item-res">
               <NavLink
                 to="https://www.instagram.com/extraordinarioscia/"
@@ -70,20 +69,6 @@ export const Navbar = () => {
             </ul>
           </div>
         )}
-        {user && <span className="nav-user-mob">Olá, {user.displayName}</span>}
-        <div className="nav-mobile">
-          {user ? (
-            <NavLink className="nav-item-icon" onClick={logout}>
-              <Logout className="nav-item-mobile" />
-              <span className="nav-p">Sair</span>
-            </NavLink>
-          ) : (
-            <NavLink className="nav-item-icon" to="/login">
-              <Login className="nav-item-mobile" />
-              <span className="nav-p">Login</span>
-            </NavLink>
-          )}
-        </div>
       </header>
     </>
   );
