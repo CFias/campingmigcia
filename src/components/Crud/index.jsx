@@ -1,98 +1,44 @@
-// import React from "react";
-// import StartFirebase from "../../services/FirebaseConfig";
-// import { ref, set, get, update, remove, child } from "firebase/database";
+import React from "react";
+import { db } from "../../services/FirebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
+import { useAuthValue } from "../../contexts/AuthContext";
+import "./styles.css";
 
-// export class Crud extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       db: "",
-//       username: "",
-//       fullname: "",
-//       phonenumber: "",
-//       dob: "",
-//     };
-//     this.interface = this.interface.bind(this);
-//   }
+export default function Crud() {
+  const { user } = useAuthValue();
 
-//   componentDidMount() {
-//     this.setState({
-//       db: firebaseConfig(),
-//     });
-//   }
+  const [title, setTitle] = React.useState("");
 
-//   render() {
-//     return (
-//       <>
-//         <form className="crud-container">
-//           <label> Nome </label>
-//           <input
-//             type="text"
-//             value={this.state.username}
-//             onChange={(e) => {
-//               this.setState({ username: e.target.value });
-//             }}
-//           />
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-//           <label> Sobrenome </label>
-//           <input
-//             type="text"
-//             value={this.state.fullname}
-//             onChange={(e) => {
-//               this.setState({ fullname: e.target.value });
-//             }}
-//           />
+    if (title !== "") {
+      await addDoc(collection(db, "todos"), {
+        title,
+        completed: false,
+      });
+      setTitle("");
+    }
+  };
 
-//           <label> Telefone </label>
-//           <input
-//             type="text"
-//             value={this.state.phonenumber}
-//             onChange={(e) => {
-//               this.setState({ phonenumber: e.target.value });
-//             }}
-//           />
-
-//           <label> DOB </label>
-//           <input
-//             type="text"
-//             value={this.state.dob}
-//             onChange={(e) => {
-//               this.setState({ dob: e.target.value });
-//             }}
-//           />
-
-//           <button onClick={this.interface} id="addBtn" className="crud-btn">
-//             Enviar recomendação
-//           </button>
-//         </form>
-//       </>
-//     );
-//   }
-
-//   interface(event) {
-//     const id = event.target.id;
-
-//     if (id == "insertBtn") {
-//       this.insertData();
-//     }
-//   }
-//   getAllInputs() {
-//     return {
-//       username: this.state.username,
-//       name: this.state.fullname,
-//       phone: this.state.phonenumber,
-//       dob: this.state.dob,
-//     };
-//   }
-
-//   insertData() {
-//     const db = this.state.db;
-//     const data = this.getAllInputs();
-
-//     set(ref(db, "Customer/" + data.username), {
-//       Fullname: data.name,
-//       Phonenumber: data.phone,
-//       dateofbirt: data.dob,
-//     });
-//   }
-// }
+  return (
+    <form onSubmit={handleSubmit} className="comment-container">
+      <h2 className="comment-txt">
+        Shalom, <span className="comment-span">{user.displayName}!</span> O que
+        você quer no segundo acampamento <span className="comment-name">EXTRAORDINÁRIOS</span> ?
+      </h2>
+      <div className="in-container">
+        <input
+          className="comment-in"
+          type="text"
+          placeholder="Envie a sua recomendação"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </div>
+      <div className="btn-container">
+        <button className="comment-btn">Comentar</button>
+      </div>
+    </form>
+  );
+}

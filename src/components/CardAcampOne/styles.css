@@ -9,7 +9,7 @@
   border: 0.5px solid var(--dest-color);
   border-radius: 15px;
   gap: 15px;
-  max-width: 70vw;
+  width: 70vw;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.535);
 }
 
@@ -25,7 +25,7 @@
 
 .acamp-p {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   max-width: 20vw;
 }
 
@@ -34,12 +34,13 @@
   background: brown;
   padding: 10px;
   border-radius: 5px;
+  transition: 250ms;
+  font-size: 14px;
 }
 
 .acamp-btn-desk:hover {
   background: var(--font-color);
   color: var(--bg-color);
-  transition: 250ms;
 }
 
 .acamp-one {

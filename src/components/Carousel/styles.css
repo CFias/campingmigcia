@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 .home-content {
@@ -70,6 +70,13 @@
   color: var(--font-color);
 }
 
+.home-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 768px) {
   .home-container {
     background-position: center;
@@ -106,4 +113,28 @@
     gap: 10px;
     font-size: 5px;
   }
+
+  .nav-item-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    gap: 10px;
+  }
+
+  .nav-user-mob {
+    color: var(--font-color);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
 }
