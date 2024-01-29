@@ -33,7 +33,9 @@ export default function Todo({
               className="todo-list"
               onChange={handleChange}
             />
-            {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ? (
+            {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ||
+            "G4PdfYRqXCT4jqDC8zeznCv2KnW2" ||
+            "8bWcckoLFjfad96ogYQ0dO0O73J2" ? (
               <div className="todo-btn">
                 <button
                   className="btn-complete"

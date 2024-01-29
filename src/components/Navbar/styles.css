@@ -3,8 +3,8 @@
   width: 100vw;
   height: 10vh;
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  gap: 100px;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
   position: absolute;
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
   }
 
   .nav-content {
