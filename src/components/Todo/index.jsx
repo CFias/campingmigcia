@@ -33,25 +33,28 @@ export default function Todo({
               className="todo-list"
               onChange={handleChange}
             />
-            <div className="todo-btn">
-              {/* <button className="btn-complete" onClick={() => toggleComplete(todo)}>
-            <CheckCircle className="todo-icon" />
-          </button>
-          <button
-            className="btn-edit"
-            onClick={() => handleEdit(todo, newTitle)}
-          >
-            <Edit className="todo-icon" />
-          </button> */}
-              {/* {user && (
-            <button
-              className="btn-delete"
-              onClick={() => handleDelete(todo.id)}
-            >
-              <Delete className="todo-icon" />
-            </button>
-          )} */}
-            </div>
+            {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ? (
+              <div className="todo-btn">
+                <button
+                  className="btn-complete"
+                  onClick={() => toggleComplete(todo)}
+                >
+                  <CheckCircle className="todo-icon" />
+                </button>
+                <button
+                  className="btn-edit"
+                  onClick={() => handleEdit(todo, newTitle)}
+                >
+                  <Edit className="todo-icon" />
+                </button>
+                <button
+                  className="btn-delete"
+                  onClick={() => handleDelete(todo.id)}
+                >
+                  <Delete className="todo-icon" />
+                </button>
+              </div>
+            ) : null}
           </div>
         </div>
       )}

@@ -7,7 +7,7 @@
   flex-direction: row-reverse;
   color: var(--font-color);
   border: 0.5px solid var(--dest-color);
-  border-radius: 15px;
+  border-radius: 10px;
   gap: 15px;
   width: 70vw;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.535);
