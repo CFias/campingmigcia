@@ -4,8 +4,8 @@
 }
 
 .footer-content {
-  background: var(--card-color);
-  color: var(--btn-color);
+  background: var(--bg-color);
+  color: var(--font-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,13 +26,17 @@
   color: var(--font-color);
 }
 
+.footer-icon:hover {
+  color: brown;
+}
+
 .footer-cred {
   width: 100vw;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: var(--btn-color);
+  color: var(--dest-color);
 }
 
 .footer-name {
@@ -41,7 +45,11 @@
 
 .name {
   text-decoration: none;
-  color: var(--btn-color);
+  color: var(--font-color);
+}
+
+.name:hover {
+  color: rgb(66, 138, 245);
 }
 
 @media screen and (max-width: 768px) {

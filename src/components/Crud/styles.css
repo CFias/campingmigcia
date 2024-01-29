@@ -1,71 +1,78 @@
 .comment-container {
-    background: var(--bg-color);
-    color: var(--font-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    padding: 15px;
-    border: 0.5px solid var(--dest-color);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
-    width: 70vw;
-    flex-direction: column;
+  background: var(--bg-color);
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
+  width: 70vw;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px 10px 0 0;
 }
 
 .comment-txt {
-    color: var(--font-color);
-    font-size: 18px;
-    text-align: center;
-    padding: 10px;
-    font-weight: 400;
+  color: var(--font-color);
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
 }
 
 .comment-span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .comment-name {
-    color: brown;
-    font-weight: 600;
+  color: brown;
+  font-weight: 600;
 }
 
 .in-container {
-    padding: 5px;
+  padding: 5px;
 }
 
 .comment-in {
-    background: black;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    width: 60vw;
-    font-size: 14px;
-    color: var(--font-color);
+  background: var(--btn-color);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60vw;
+  font-size: 14px;
+  color: var(--font-color);
 }
 
 .comment-btn {
-    background: brown;
-    color: var(--font-color);
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 250ms;
-    margin-top: 10px;
+  background: brown;
+  color: var(--font-color);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 250ms;
+  margin-top: 10px;
 }
 
 .comment-btn:hover {
-    background: var(--font-color);
-    color: var(--bg-color);
+  background: var(--font-color);
+  color: var(--bg-color);
 }
 
 @media screen and (max-width: 768px) {
-    .comment-txt {
-        font-size: 12px;
-    }
+  .comment-txt {
+    font-size: 12px;
+  }
 
-    .comment-btn {
-        padding: 10px;
-        font-size: 10px;
-    }
+  .comment-btn {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .comment-sol {
+    font-size: 14px;
+    padding-top: 30px;
+    text-align: left;
+    width: 60vw;
+  }
 }

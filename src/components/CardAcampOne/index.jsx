@@ -25,7 +25,7 @@ export default function CardAcampOne() {
         to="https://drive.google.com/drive/folders/1BOBUyoKjVGNx2mbSSYn2WjndwAfMzkqc"
         className="acamp-one-btn"
       >
-        <p className="acamp-btn">VER IMAGENS</p>
+        <p className="acamp-btn">Ver imagens</p>
       </NavLink>
     </div>
   );
