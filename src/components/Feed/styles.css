@@ -29,7 +29,6 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  padding: 20px;
 }
 
 .home-date {
@@ -49,11 +48,11 @@
 .home-conv {
   color: var(--font-color);
   text-decoration: none;
-  padding: 10px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
   text-align: center;
+  padding: 10px;
 }
 
 .home-link {

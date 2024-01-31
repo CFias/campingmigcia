@@ -1,0 +1,53 @@
+.profile-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/imagens/acamp-photo2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-content {
+    color: var(--font-color);
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 35vw;
+    height: 50vh;
+    border: var(--border-def);
+    border-radius: var(--border-rad);
+    gap: 20px;
+}
+
+.profile-select {
+    display: flex;
+    cursor: pointer;
+    color: var(--font-color);
+    transition: 250ms;
+    border-radius: 5px;
+    width: 10vw;
+}
+
+.profile-select:hover {
+    background: var(--font-color);
+    color: var(--bg-color);
+}
+
+.profile-btn {
+    background: brown;
+    border: none;
+    padding: 10px;
+    color: var(--font-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.profile-btn:hover {
+    color: var(--bg-color);
+    background-color: var(--font-color);
+}

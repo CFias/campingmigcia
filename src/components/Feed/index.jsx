@@ -2,9 +2,9 @@ import React from "react";
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 import { useAuthValue } from "../../contexts/AuthContext";
-import { Instagram, PersonAdd, WhatsApp } from "@mui/icons-material";
+import { PersonAdd } from "@mui/icons-material";
 import { Login, Logout } from "@mui/icons-material";
-import About from "../About";
+import CardBible from "../CardBible";
 import CardAcampOne from "../CardAcampOne";
 import Crud from "../Crud";
 import Todo from "../Todo";
@@ -15,12 +15,11 @@ import {
   doc,
   updateDoc,
   deleteDoc,
-  QuerySnapshot,
 } from "firebase/firestore";
 import { db } from "../../services/FirebaseConfig";
 import { useAuthentication } from "../../hooks/useAuthentication";
 
-export const Carousel = () => {
+export const Feed = () => {
   const { logout } = useAuthentication();
   const { user } = useAuthValue();
 
@@ -100,7 +99,7 @@ export const Carousel = () => {
               ))}
             </div>
           </div>
-          <About />
+          <CardBible />
           <CardAcampOne />
         </div>
       </section>

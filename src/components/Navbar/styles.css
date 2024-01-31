@@ -77,6 +77,12 @@
   border-radius: 50%;
 }
 
+.profile-img-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .header-container {
     display: flex;
