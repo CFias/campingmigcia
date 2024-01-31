@@ -1,0 +1,55 @@
+.redes-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/imagens/acamp-photo2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.redes-content {
+  background: var(--bg-color);
+  padding: 20px;
+  width: 55vw;
+  border-radius: var(--border-rad);
+  border: var(--border-def);
+  color: var(--font-color);
+}
+
+@media screen and (max-width: 768px) {
+  .redes-container {
+  }
+
+  .redes-content {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .redes-title {
+    text-align: center;
+    color: brown;
+  }
+
+  .redes-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .icons {
+    color: var(--font-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .rede-name {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+}

@@ -1,0 +1,76 @@
+.contact-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/imagens/acamp-photo2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-content {
+    background: var(--bg-color);
+    display: flex;
+    padding: 20px;
+    width: 55vw;
+    border-radius: var(--border-rad);
+    border: var(--border-def);
+    color: var(--font-color);
+}
+
+.contact-title {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contacts {
+    color: var(--font-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lead {
+    width: 5vw;
+    border-radius: 50%;
+    border: var(--border-def);
+}
+
+.contact-logo {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.contact-name {
+    color: brown;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        width: 90vw;
+    }
+
+    .contact-list {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

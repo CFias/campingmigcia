@@ -1,4 +1,4 @@
-.about-container {
+.card-bible-container {
   background: var(--bg-color);
   color: var(--font-color);
   display: flex;
@@ -11,59 +11,60 @@
   width: 55vw;
 }
 
-.about-content {
+.card-bible-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 12px;
 }
 
-.about-text {
+.card-bible-text {
   width: 21vw;
   padding: 10px;
   font-size: 12px;
 }
 
-.about-vs {
+.card-bible-vs {
   color: brown;
 }
 
-.about-image {
+.card-bible-image {
   background-image: url("../../assets/imagens/acamp-photo-3.png");
   background-size: cover;
   width: 30vw;
   height: 30vh;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.32);
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 768px) {
-  .about-container {
+  .card-bible-container {
     width: 80vw;
   }
 
-  .about-content {
+  .card-bible-content {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
 
-  .about-text {
+  .card-bible-text {
     width: 70vw;
     text-align: center;
   }
 
-  .text {
+  .card-bible-text {
     font-size: 10px;
     max-width: 70vw;
   }
 
-  .about-image {
+  .card-bible-image {
     width: 75vw;
     padding: 10px;
     border-radius: 3px;
   }
 
-  .about-vs {
+  .card-bible-vs {
   }
 }

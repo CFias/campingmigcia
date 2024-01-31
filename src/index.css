@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+  margin: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
 :root {
   --bg-color: #00000093;
   --card-color: #262626;
   --dest-color: #444141;
   --btn-color: #202020;
   --font-color: #e2e2e3;
+
+  
+  --border-def: 0.5px solid var(--dest-color);
+  --border-rad: 5px;
 }
 
 .container {
@@ -120,4 +131,31 @@
   .form-btn {
     width: 70vw;
   }
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url("../../assets/imagens/acamp-photo2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.loading {
+  background-image: url("./assets/imagens/acamp-photo2.png");
+  background-position: center;
+  transition: 500ms;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-img {
+  width: 100px;
+}
+
+.loading-p {
+  color: var(--font-color);
+  font-size: 14px;
 }

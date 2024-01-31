@@ -1,0 +1,18 @@
+.cults-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/imagens/acamp-photo2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.cults-content {
+    background: var(--bg-color);
+    padding: 20px;
+    width: 55vw;
+    border-radius: var(--border-rad);
+    border: var(--border-def);
+    color: var(--font-color);
+}

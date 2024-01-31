@@ -4,10 +4,31 @@ import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
 import { useAuthentication } from "../../hooks/useAuthentication";
+import { Avatar } from "@mui/material";
 
 export const Navbar = () => {
-  const { user } = useAuthValue();
+  const { user, url } = useAuthValue();
   const { logout } = useAuthentication();
+
+  const [image, setImage] = React.useState(null);
+
+  const handleSubmit = () => {
+    const imageRef = ref(storage, `profile/${v4()}`);
+    uploadBytes(imageRef, image)
+      .then(() => {
+        getDownloadURL(imageRef)
+          .then((url) => {
+            setUrl(url);
+          })
+          .catch((error) => {
+            console.log(error.message, "erro na imagem!");
+          });
+        setImage(null);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
   return (
     <>
@@ -28,7 +49,7 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item-res">
-              <NavLink to="about" className="nav-item">
+              <NavLink to="/cults" className="nav-item">
                 Cultos
               </NavLink>
             </li>
@@ -52,7 +73,9 @@ export const Navbar = () => {
           <>
             <div className="nav-btn">
               <ul className="nav-content">
-                <span className="nav-user-desk">Olá, {user.displayName}</span>
+                <NavLink to="/profile" className="profile-img-icon">
+                  <span className="nav-user-desk">Olá, {user.displayName}</span>
+                </NavLink>
                 <li className="nav-btn-logout">
                   <NavLink onClick={logout} className="nav-item">
                     Sair
