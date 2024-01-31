@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useAuthentication } from "../../hooks/useAuthentication";
 import logo from "../../assets/imagens/migcia.png";
+import { Email, Lock, Person } from "@mui/icons-material";
 
 export default function Register() {
   const [displayName, setDisplayName] = useState("");
@@ -42,11 +43,12 @@ export default function Register() {
       <div className="form-card-container">
         <div className="form-card">
           <img src={logo} alt="Logo Mig" className="logo-img" />
-          <h2 className="form-text">O nosso segundo acampamento</h2>
+          <h2 className="form-text">VEM SER EXTRAORDINÁRIO!</h2>
         </div>
         <form onSubmit={handleSubmit} className="form-content">
-          <h2 className="form-title">Inscreva-se</h2>
+          <h2 className="form-title">Cadastre-se</h2>
           <label className="form-item">
+            <Person className="form-icon" />
             <input
               className="form-in"
               type="text"
@@ -58,6 +60,7 @@ export default function Register() {
             />
           </label>
           <label className="form-item">
+            <Email className="form-icon" />
             <input
               className="form-in"
               type="email"
@@ -69,6 +72,7 @@ export default function Register() {
             />
           </label>
           <label className="form-item">
+            <Lock className="form-icon" />
             <input
               className="form-in"
               type="password"
@@ -80,6 +84,7 @@ export default function Register() {
             />
           </label>
           <label className="form-item">
+            <Lock className="form-icon" />
             <input
               className="form-in"
               type="password"

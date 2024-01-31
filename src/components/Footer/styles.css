@@ -1,10 +1,10 @@
 .footer-container {
-  background: var(--dest-color);
   border-top: 0.5px solid var(--btn-color);
+  /* background: var(--bg-color); */
 }
 
 .footer-content {
-  background: var(--bg-color);
+  background: rgb(0, 0, 0);
   color: var(--font-color);
   display: flex;
   align-items: center;
@@ -12,7 +12,6 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .footer-redes {
@@ -36,7 +35,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: var(--dest-color);
+  color: var(--font-color);
 }
 
 .footer-name {
@@ -58,7 +57,6 @@
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    background: var(--bg-color);
   }
 
   .footer-redes {

@@ -4,6 +4,7 @@ import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
 import { useAuthentication } from "../../hooks/useAuthentication";
+import Perfias from "../../assets/imagens/fiasdev.png";
 
 export const Navbar = () => {
   const { user } = useAuthValue();
@@ -12,30 +13,38 @@ export const Navbar = () => {
   return (
     <>
       <header className="header-container">
+        <NavLink to="/" className="header-logo-img">
+          <img src={logo} alt="Logo Mig" className="logo-img" />
+        </NavLink>
         <nav className="nav-container">
           <ul className="nav-content">
-            <NavLink to="/" className="header-logo-img">
-              <img src={logo} alt="Logo Mig" className="logo-img" />
-            </NavLink>
             <li className="nav-item-res">
-              <NavLink
-                to="https://www.instagram.com/extraordinarioscia/"
-                className="nav-item"
-              >
-                Instagram
+              <NavLink to="redes" className="nav-item">
+                Redes
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="https://api.whatsapp.com/send?phone=+5571%209631-0768&text=Acamp+Mig+Cia"
-                className="nav-item"
-              >
+              <NavLink to="/contact" className="nav-item">
                 Contato
               </NavLink>
             </li>
             <li className="nav-item-res">
               <NavLink to="about" className="nav-item">
-                Sobre nós
+                Cultos
+              </NavLink>
+            </li>
+            <li className="nav-item-res">
+              <NavLink
+                target="_blank"
+                to="https://www.bibliaonline.com.br/"
+                className="nav-item"
+              >
+                Bíblia
+              </NavLink>
+            </li>
+            <li className="nav-item-res">
+              <NavLink to="about" className="nav-item">
+                Acerca
               </NavLink>
             </li>
           </ul>
@@ -44,6 +53,9 @@ export const Navbar = () => {
           <>
             <div className="nav-btn">
               <ul className="nav-content">
+                {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ? (
+                  <img className="foto-profile" src={Perfias} />
+                ) : null}
                 <span className="nav-user-desk">Olá, {user.displayName}</span>
                 <li className="nav-btn-logout">
                   <NavLink onClick={logout} className="nav-item">
@@ -58,7 +70,7 @@ export const Navbar = () => {
             <ul className="nav-content">
               <li>
                 <NavLink to="/register" className="nav-item">
-                  Inscrições
+                  Cadastre-se
                 </NavLink>
               </li>
               <li>

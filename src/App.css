@@ -9,7 +9,8 @@ body {
 }
 
 .loading {
-  background: var(--bg-color);
+  background-image: url("./assets/imagens/acamp-photo2.png");
+  background-position: center;
   transition: 500ms;
   height: 100vh;
   display: flex;

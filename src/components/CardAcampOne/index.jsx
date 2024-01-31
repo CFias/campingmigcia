@@ -4,7 +4,7 @@ import "./styles.css";
 
 export default function CardAcampOne() {
   return (
-    <div className="acamp-container">
+    <section className="acamp-container">
       <div className="acamp-content">
         <h2 className="acamp-one">Primeiro ACAMP</h2>
         <p className="acamp-p">
@@ -13,8 +13,9 @@ export default function CardAcampOne() {
         <NavLink
           to="https://drive.google.com/drive/folders/1BOBUyoKjVGNx2mbSSYn2WjndwAfMzkqc"
           className="acamp-one-btn"
+          target="_blank"
         >
-          <p className="acamp-btn-desk">VER IMAGENS</p>
+          <p className="acamp-btn-desk">Ver imagens</p>
         </NavLink>
       </div>
       <NavLink
@@ -24,9 +25,10 @@ export default function CardAcampOne() {
       <NavLink
         to="https://drive.google.com/drive/folders/1BOBUyoKjVGNx2mbSSYn2WjndwAfMzkqc"
         className="acamp-one-btn"
+        target="_blank"
       >
         <p className="acamp-btn">Ver imagens</p>
       </NavLink>
-    </div>
+    </section>
   );
 }

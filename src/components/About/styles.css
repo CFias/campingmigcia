@@ -8,7 +8,7 @@
   padding: 20px;
   border: 0.5px solid var(--dest-color);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.654);
-  width: 70vw;
+  width: 55vw;
 }
 
 .about-content {
@@ -19,7 +19,7 @@
 }
 
 .about-text {
-  max-width: 20vw;
+  width: 21vw;
   padding: 10px;
   font-size: 12px;
 }
@@ -39,6 +39,7 @@
 
 @media screen and (max-width: 768px) {
   .about-container {
+    width: 80vw;
   }
 
   .about-content {
@@ -48,7 +49,7 @@
   }
 
   .about-text {
-    max-width: 70vw;
+    width: 70vw;
     text-align: center;
   }
 
@@ -58,7 +59,11 @@
   }
 
   .about-image {
-    width: 70vw;
+    width: 75vw;
     padding: 10px;
+    border-radius: 3px;
+  }
+
+  .about-vs {
   }
 }
