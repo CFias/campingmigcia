@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function About() {
   return (
-    <div className="about-container">
+    <section className="about-container">
       <div className="about-content">
         <div className="about-text">
           <p className="text">
@@ -17,6 +17,6 @@ export default function About() {
         </div>
         <div className="about-image"></div>
       </div>
-    </div>
+    </section>
   );
 }

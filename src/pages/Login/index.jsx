@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useAuthentication } from "./../../hooks/useAuthentication";
 import logo from "../../assets/imagens/migcia.png";
+import { Email, Lock } from "@mui/icons-material";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -34,11 +35,12 @@ export default function Login() {
       <div className="form-card-container">
         <div className="form-card">
           <img src={logo} alt="Logo Mig" className="logo-img" />
-          <h2 className="form-text">O nosso segundo acampamento</h2>
+          <h2 className="form-text">Olá, EXTRAORDINÁRIO!</h2>
         </div>
         <form onSubmit={handleSubmit} className="form-content">
           <h2 className="form-title">Fazer Login</h2>
           <label className="form-item">
+            <Email className="form-icon" />
             <input
               className="form-in"
               type="email"
@@ -50,6 +52,7 @@ export default function Login() {
             />
           </label>
           <label className="form-item">
+            <Lock className="form-icon" />
             <input
               className="form-in"
               type="password"
