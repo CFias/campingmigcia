@@ -11,6 +11,7 @@
 .contact-content {
     background: var(--bg-color);
     display: flex;
+    margin-top: 70px;
     padding: 20px;
     width: 55vw;
     border-radius: var(--border-rad);
@@ -38,6 +39,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: 250ms;
+}
+
+.contacts:hover {
+    color: white;
 }
 
 .lead {
@@ -72,5 +78,8 @@
         justify-content: center;
     }
 
+    .lead {
+        width: 15vw;
+    }
 
 }

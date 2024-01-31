@@ -20,19 +20,32 @@ export default function Contact() {
             <h2>Dúvidas ?</h2>
           </div>
           <h2 className="contact-title">
-            Olá, <span className="contact-name">{user.displayName}!</span> Fale com um de nossos lideres:
+            Olá, <span className="contact-name">{user.displayName}!</span> Fale
+            com um de nossos lideres:
           </h2>
-          <NavLink className="contacts">
+          <NavLink
+            to="https://wa.me/5571992853065?text=Shalom%2C+Pri%21+Tira+uma+duvida+minha+pfv"
+            target="_blank"
+            className="contacts"
+          >
             <img className="lead" src={liderPri} />
             <WhatsApp />
             Priscila Chagas
           </NavLink>
-          <NavLink className="contacts">
+          <NavLink
+            to="https://wa.me/5571996310768?text=Shalom%2C+Vaval%21+Tira+uma+duvida+minha+pfv"
+            target="_blank"
+            className="contacts"
+          >
             <img className="lead" src={liderVal} />
             <WhatsApp />
             Valmerson Santana
           </NavLink>
-          <NavLink className="contacts">
+          <NavLink
+            to="https://wa.me/5571987226392?text=Shalom%2C+Dai%21+Tira+uma+duvida+minha+pfv"
+            target="_blank"
+            className="contacts"
+          >
             <img className="lead" src={liderDai} />
             <WhatsApp />
             Adaías Sobrinho
