@@ -83,7 +83,7 @@ export const Carousel = () => {
               <a className="home-link" href="/register">
                 Inscreva-se
               </a>{" "}
-              e vamos acampampar com o Deus vivo!
+              e vamos viver o extraordinário
             </h4>
           </div>
           <div className="home-comment">
