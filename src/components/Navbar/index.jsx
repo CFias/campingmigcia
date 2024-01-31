@@ -4,7 +4,6 @@ import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
 import { useAuthentication } from "../../hooks/useAuthentication";
-import Perfias from "../../assets/imagens/fiasdev.png";
 
 export const Navbar = () => {
   const { user } = useAuthValue();
@@ -53,9 +52,6 @@ export const Navbar = () => {
           <>
             <div className="nav-btn">
               <ul className="nav-content">
-                {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ? (
-                  <img className="foto-profile" src={Perfias} />
-                ) : null}
                 <span className="nav-user-desk">Olá, {user.displayName}</span>
                 <li className="nav-btn-logout">
                   <NavLink onClick={logout} className="nav-item">

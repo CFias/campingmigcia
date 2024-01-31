@@ -1,5 +1,4 @@
 import React from "react";
-import Perfias from "../../assets/imagens/fiasdev.png";
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 import { useAuthValue } from "../../contexts/AuthContext";
@@ -58,9 +57,6 @@ export const Carousel = () => {
       <section className="home-container">
         <div className="home-content">
           <div className="nav-mobile">
-            {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ? (
-              <img className="foto-profile" src={Perfias} />
-            ) : null}
             {user && (
               <span className="nav-user-mob">Olá, {user.displayName}</span>
             )}
