@@ -36,7 +36,7 @@ export default function BottomBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="https://www.bibliaonline.com.br/" className="nav-item">
+          <NavLink to="https://www.bibliaonline.com.br/" target="_blank" className="nav-item">
             <MenuBook />
             <p className="nav-name">Biblia</p>
           </NavLink>
