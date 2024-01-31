@@ -78,7 +78,8 @@
 
   .todo-list {
     font-size: 12px;
-    width: 40vw;
+    width: 70vw;
+    border-radius: 5px;
   }
 
   .todo-btn {
