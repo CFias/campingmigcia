@@ -73,6 +73,7 @@
   .todo-content {
     width: 90vw;
     justify-content: center;
+    gap: 5px;
   }
 
   .todo-list {
@@ -90,7 +91,6 @@
   .btn-complete,
   .btn-edit,
   .btn-delete {
-    width: 30px;
-    height: 30px;
+    padding: 5px;
   }
 }
