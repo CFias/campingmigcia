@@ -4,17 +4,43 @@
   justify-content: center;
   align-items: center;
   background-image: url("../../assets/imagens/acamp-photo2.png");
-  background-size: cover;
+  background-size: 3500px;
   background-position: center;
 }
 
 .redes-content {
   background: var(--bg-color);
-  padding: 20px;
-  width: 55vw;
+  padding: 30px;
   border-radius: var(--border-rad);
   border: var(--border-def);
   color: var(--font-color);
+}
+
+.redes-title {
+  text-align: center;
+  padding: 20px;
+  color: brown;
+}
+
+.redes-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icons {
+  border: 1px solid var(--dest-color);
+  color: var(--font-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  transition: 250ms;
+}
+
+.icons:hover {
+  background: var(--btn-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -37,7 +63,6 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    gap: 20px;
   }
 
   .icons {
@@ -46,6 +71,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 80vw;
   }
 
   .rede-name {

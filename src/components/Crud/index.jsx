@@ -6,6 +6,7 @@ import "./styles.css";
 
 export default function Crud() {
   const { user } = useAuthValue();
+  const cod = user.uid;
 
   const [title, setTitle] = React.useState("");
 

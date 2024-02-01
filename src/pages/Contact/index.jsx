@@ -15,21 +15,23 @@ export default function Contact() {
     <div className="contact-container">
       <div className="contact-content">
         <div className="contact-list">
-          <div className="contact-logo">
-            <img className="logo" src={MigLogo} alt="" />
-            <h2>Dúvidas ?</h2>
-          </div>
-          <h2 className="contact-title">
-            Olá, <span className="contact-name">{user.displayName}!</span> Fale
-            com um de nossos lideres:
-          </h2>
+          <h2 className="contact-help">Dúvidas ?</h2>
+          {user ? (
+            <h2 className="contact-title">
+              Olá, <span className="contact-name">{user.displayName}!</span>{" "}
+              Fale com um de nossos lideres:
+            </h2>
+          ) : (
+            <h2 className="contact-title">
+              Olá, Fale com um de nossos lideres:
+            </h2>
+          )}
           <NavLink
             to="https://wa.me/5571992853065?text=Shalom%2C+Pri%21+Tira+uma+duvida+minha+pfv"
             target="_blank"
             className="contacts"
           >
             <img className="lead" src={liderPri} />
-            <WhatsApp />
             Priscila Chagas
           </NavLink>
           <NavLink
@@ -38,7 +40,6 @@ export default function Contact() {
             className="contacts"
           >
             <img className="lead" src={liderVal} />
-            <WhatsApp />
             Valmerson Santana
           </NavLink>
           <NavLink
@@ -47,7 +48,6 @@ export default function Contact() {
             className="contacts"
           >
             <img className="lead" src={liderDai} />
-            <WhatsApp />
             Adaías Sobrinho
           </NavLink>
         </div>

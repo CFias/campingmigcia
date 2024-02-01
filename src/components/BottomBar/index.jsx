@@ -44,7 +44,7 @@ export default function BottomBar() {
         <li>
           <NavLink to="/about" className="nav-item">
             <Info />
-            <p className="nav-name">Sobre</p>
+            <p className="nav-name">Acerca</p>
           </NavLink>
         </li>
       </ul>

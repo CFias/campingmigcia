@@ -17,7 +17,6 @@ import About from "./pages/About";
 import BottomBar from "./components/BottomBar";
 
 function App() {
-  const [url, setUrl] = React.useState(null);
   const [user, setUser] = useState(undefined);
   const { auth } = useAuthentication();
 

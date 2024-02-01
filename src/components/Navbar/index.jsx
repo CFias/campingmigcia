@@ -4,10 +4,9 @@ import logo from "../../assets/imagens/migcia.png";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
 import { useAuthentication } from "../../hooks/useAuthentication";
-import { Avatar } from "@mui/material";
 
 export const Navbar = () => {
-  const { user, url } = useAuthValue();
+  const { user } = useAuthValue();
   const { logout } = useAuthentication();
 
   const [image, setImage] = React.useState(null);
@@ -86,14 +85,14 @@ export const Navbar = () => {
           </>
         ) : (
           <div className="nav-btn">
-            <ul className="nav-content">
+            <ul className="nav-content-nu">
               <li>
-                <NavLink to="/register" className="nav-item">
+                <NavLink to="/register" className="nav-item nav-item">
                   Cadastre-se
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/login" className="nav-item-log nav-item">
+                <NavLink to="/login" className="nav-item-nu nav-item">
                   Login
                 </NavLink>
               </li>
