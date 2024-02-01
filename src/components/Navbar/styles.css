@@ -29,6 +29,16 @@
   gap: 30px;
 }
 
+.nav-content-nu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 5px;
+  border: var(--border-def);
+}
+
 .nav-item {
   color: var(--font-color);
   text-decoration: none;
@@ -41,7 +51,7 @@
   color: white;
 }
 
-.nav-item-log {
+.nav-item-nu {
   background: brown;
   text-decoration: none;
   color: var(--font-color);
@@ -52,7 +62,7 @@
   align-items: center;
 }
 
-.nav-item-log:hover {
+.nav-item-nu:hover {
   background: var(--font-color);
   color: var(--bg-color);
   transition: 250ms;
@@ -99,6 +109,7 @@
   }
 
   .nav-content,
+  .nav-content-nu,
   .nav-item,
   .nav-user-desk {
     display: none;

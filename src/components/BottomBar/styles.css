@@ -6,7 +6,7 @@
   .nav-bottom-container {
     width: 100%;
     height: 10vh;
-    background: var(--bg-color);
+    background: var(--btn-color);
     position: sticky;
     z-index: 1000;
     bottom: 0;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     list-style: none;
     width: 100%;
-    color: var(--font-color);
+    color: var(--card-color);
     margin: 0 auto;
     padding: 20px;
   }
@@ -32,6 +32,10 @@
     align-items: center;
     gap: 3px;
     width: 10vw;
+  }
+
+  .nav-item:hover {
+    color: brown;
   }
 
   .nav-name {

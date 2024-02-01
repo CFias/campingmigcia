@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 768px) {
   .card-bible-container {
-    width: 80vw;
+    width: 90vw;
   }
 
   .card-bible-content {
@@ -60,7 +60,7 @@
   }
 
   .card-bible-image {
-    width: 75vw;
+    width: 80vw;
     padding: 10px;
     border-radius: 3px;
   }

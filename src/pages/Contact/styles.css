@@ -1,85 +1,102 @@
 .contact-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../assets/imagens/acamp-photo2.png");
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/imagens/acamp-photo2.png");
+  background-size: 3500px;
+  background-position: center;
 }
 
 .contact-content {
-    background: var(--bg-color);
-    display: flex;
-    margin-top: 70px;
-    padding: 20px;
-    width: 55vw;
-    border-radius: var(--border-rad);
-    border: var(--border-def);
-    color: var(--font-color);
+  background: var(--bg-color);
+  display: flex;
+  padding: 20px;
+  border-radius: var(--border-rad);
+  border: var(--border-def);
+  color: var(--font-color);
+}
+
+.contact-help {
+  color: brown;
+  text-align: center;
+  font-size: 28px;
 }
 
 .contact-title {
-    padding: 20px;
-    font-size: 16px;
+  padding: 20px;
+  font-size: 16px;
 }
 
 .contact-list {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    flex-direction: column;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .contacts {
-    color: var(--font-color);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 250ms;
+  color: var(--font-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 250ms;
+  border: 1px solid var(--dest-color);
+  width: 18vw;
+  border-radius: 10px;
 }
 
 .contacts:hover {
-    color: white;
+  color: white;
+  background: var(--btn-color);
+  opacity: 1;
 }
 
 .lead {
-    width: 5vw;
-    border-radius: 50%;
-    border: var(--border-def);
+  width: 5vw;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.lead:hover {
+  opacity: 1;
 }
 
 .contact-logo {
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .logo {
-    width: 15vw;
+  width: 15vw;
 }
 
 .contact-name {
-    color: brown;
+  color: brown;
 }
 
 @media screen and (max-width: 768px) {
-    .contact-content {
-        width: 90vw;
-    }
+  .contact-content {
+    width: 90vw;
+  }
 
-    .contact-list {
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-    }
+  .contact-list {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
 
-    .lead {
-        width: 15vw;
-    }
+  .contacts {
+    width: 60vw;
+    gap: 30px;
+  }
 
+  .lead {
+    width: 15vw;
+  }
 }
