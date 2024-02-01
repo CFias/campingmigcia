@@ -1,4 +1,10 @@
-import { CheckCircle, Delete, Edit, FavoriteBorder } from "@mui/icons-material";
+import {
+  CheckCircle,
+  Delete,
+  Edit,
+  Favorite,
+  FavoriteBorder,
+} from "@mui/icons-material";
 import React from "react";
 import "./styles.css";
 import { useAuthValue } from "../../contexts/AuthContext";
@@ -33,9 +39,9 @@ export default function Todo({
               className="todo-list"
               onChange={handleChange}
             />
-            {/* {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ||
-            "G4PdfYRqXCT4jqDC8zeznCv2KnW2" ||
-            "8bWcckoLFjfad96ogYQ0dO0O73J2" ? (
+            {user.uid === "N2EXuNZIhfhZwHUI5RnKd8F0HKf1" ||
+            user.uid === "G4PdfYRqXCT4jqDC8zeznCv2KnW2" ||
+            user.uid === "8bWcckoLFjfad96ogYQ0dO0O73J2" ? (
               <div className="todo-btn">
                 <button
                   className="btn-complete"
@@ -56,7 +62,9 @@ export default function Todo({
                   <Delete className="todo-icon" />
                 </button>
               </div>
-            ) : null} */}
+            ) : (
+              <Favorite />
+            )}
           </div>
         </div>
       )}
