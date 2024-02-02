@@ -84,16 +84,16 @@ export const Navbar = () => {
             </div>
           </>
         ) : (
-          <div className="nav-btn">
+          <div className="nav-btn-nu">
             <ul className="nav-content-nu">
               <li>
-                <NavLink to="/register" className="nav-item nav-item">
-                  Cadastre-se
+                <NavLink to="/register" className="nav-item-reg">
+                  <p className="nav-reg">Cadastre-se</p>
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/login" className="nav-item-nu nav-item">
-                  Login
+                  <p className="nav-log">Login</p>
                 </NavLink>
               </li>
             </ul>

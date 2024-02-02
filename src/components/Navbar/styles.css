@@ -24,26 +24,20 @@
 .nav-content {
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-content-nu {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  border-radius: 5px;
-  border: var(--border-def);
+  cursor: pointer;
 }
 
 .nav-item {
   color: var(--font-color);
   text-decoration: none;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
   transition: 250ms;
 }
 
@@ -52,14 +46,33 @@
 }
 
 .nav-item-nu {
-  background: brown;
   text-decoration: none;
   color: var(--font-color);
   padding: 10px;
   border-radius: 3px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.436);
   display: flex;
   align-items: center;
+  justify-content: center;
+  border: var(--border-def);
+  border-left: none
+}
+
+.nav-item-reg {
+  border: var(--border-def);
+  border-right: none;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  text-decoration: none;
+  background: brown;
+  transition: 250ms;
+}
+
+.nav-item-reg:hover {
+  background: var(--font-color);
+  color: var(--bg-color);
 }
 
 .nav-item-nu:hover {
