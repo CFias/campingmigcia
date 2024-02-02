@@ -15,12 +15,15 @@ export default function Crud() {
 
     if (title !== "") {
       await addDoc(collection(db, "todos"), {
+        cod,
         title,
         completed: false,
       });
       setTitle("");
     }
   };
+
+  console.log(cod)
 
   return (
     <>

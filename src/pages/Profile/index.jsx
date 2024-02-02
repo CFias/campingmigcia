@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { storage } from "../../services/FirebaseConfig";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
 import { Avatar } from "@mui/material";
 import { useAuthValue } from "../../contexts/AuthContext";
 
@@ -18,7 +18,7 @@ export default function Profile() {
   };
 
   const handleSubmit = () => {
-    const imageRef = ref(storage, "profile");
+    const imageRef = ref(storage, "/profile");
     uploadBytes(imageRef, image)
       .then(() => {
         getDownloadURL(imageRef)
@@ -36,21 +36,25 @@ export default function Profile() {
   };
 
   return (
-    <div className="profile-container">
-      <div className="profile-content">
-        <Avatar src={url} alt="" sx={{ width: 150, height: 150 }} />
-        <input
-          className="profile-select"
-          type="file"
-          onChange={handleImageChange}
-        />
-        <button className="profile-btn" onClick={handleSubmit}>
-          Alterar
-        </button>
-        <div className="profile-bio">
-          <h2>{user.displayName}</h2>
-        </div>
+    <>
+      <div className="profile-container">
+        {user && (
+          <div className="profile-content">
+            <Avatar src={url} alt="" sx={{ width: 150, height: 150 }} />
+            <input
+              className="profile-select"
+              type="file"
+              onChange={handleImageChange}
+            />
+            <button className="profile-btn" onClick={handleSubmit}>
+              Alterar
+            </button>
+            <div className="profile-bio">
+              <h2>{user.displayName}</h2>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 }

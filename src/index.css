@@ -23,6 +23,7 @@
   height: 100vh;
   background-image: url("./assets/imagens/acamp-photo2.png");
   background-position: center;
+  background-size: cover;
 }
 
 .form-container {
@@ -39,7 +40,6 @@
   text-align: center;
   background: var(--bg-color);
   padding: 20px;
-  width: 55vw;
   border-radius: 10px;
   border: 0.5px solid var(--dest-color);
   color: var(--font-color);
@@ -76,13 +76,13 @@
   border-radius: 5px;
   border: 0.5px solid var(--dest-color);
   padding: 5px;
-  width: 45vw;
+  width: 25vw;
   font-size: 16px;
 }
 
 .form-btn {
   background: brown;
-  width: 45vw;
+  width: 25vw;
   border-radius: 5px;
   border: none;
   padding: 8px;
