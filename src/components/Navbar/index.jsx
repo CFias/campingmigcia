@@ -9,26 +9,6 @@ export const Navbar = () => {
   const { user } = useAuthValue();
   const { logout } = useAuthentication();
 
-  const [image, setImage] = React.useState(null);
-
-  const handleSubmit = () => {
-    const imageRef = ref(storage, `profile/${v4()}`);
-    uploadBytes(imageRef, image)
-      .then(() => {
-        getDownloadURL(imageRef)
-          .then((url) => {
-            setUrl(url);
-          })
-          .catch((error) => {
-            console.log(error.message, "erro na imagem!");
-          });
-        setImage(null);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
-
   return (
     <>
       <header className="header-container">

@@ -1,10 +1,8 @@
 import React from "react";
 import "./styles.css";
-import { WhatsApp } from "@mui/icons-material";
 import liderPri from "../../assets/imagens/liderpri.png";
 import liderVal from "../../assets/imagens/liderval.png";
 import liderDai from "../../assets/imagens/liderdai.png";
-import MigLogo from "../../assets/imagens/migcia.png";
 import { NavLink } from "react-router-dom";
 import { useAuthValue } from "../../contexts/AuthContext";
 

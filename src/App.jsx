@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Cults from "./pages/Cults";
 import About from "./pages/About";
 import BottomBar from "./components/BottomBar";
+import Subscribe from "./pages/Subscribe";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -59,6 +60,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cults" element={<Cults />} />
             <Route path="/about" element={<About />} />
+            <Route path="/subscribe" element={<Subscribe />} />
           </Routes>
           <BottomBar />
         </BrowserRouter>

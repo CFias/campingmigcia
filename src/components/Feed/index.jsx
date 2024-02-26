@@ -79,7 +79,7 @@ export const Feed = () => {
           </div>
           <div className="home-frase">
             <h4 className="home-conv">
-              <a className="home-link" href="/register">
+              <a className="home-link" href="/subscribe">
                 Inscreva-se
               </a>{" "}
               e vamos viver o extraordinário

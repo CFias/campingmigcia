@@ -1,4 +1,3 @@
-import { db } from "../services/FirebaseConfig";
 import { useEffect, useState } from "react";
 import {
   getAuth,
