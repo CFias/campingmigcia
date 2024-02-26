@@ -14,10 +14,9 @@ export default function Subscribe() {
   const onSubmit = async (data) => {
     if (data !== "") {
       await addDoc(collection(db, "subs"), {
-        // Aqui você pode realizar o envio dos dados
         data,
       });
-      reset(); // Resetar o formulário após o envio
+      reset();
     }
   };
 
