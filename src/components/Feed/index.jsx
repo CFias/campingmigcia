@@ -55,36 +55,10 @@ export const Feed = () => {
     <>
       <section className="home-container">
         <div className="home-content">
-          <div className="nav-mobile">
-            {user && (
-              <span className="nav-user-mob">Olá, {user.displayName}</span>
-            )}
-            {user ? (
-              <NavLink className="nav-item-icon" onClick={logout}>
-                <Logout className="nav-item-mobile" />
-                <span className="nav-p">Sair</span>
-              </NavLink>
-            ) : (
-              <div className="nav-login-register">
-                <NavLink className="nav-item-login" to="/login">
-                  <Login className="nav-login" />
-                  <span className="nav-p">Login</span>
-                </NavLink>
-                <NavLink to="/register" className="nav-item-register">
-                  <PersonAdd className="nav-register" />
-                  Cadastre-se
-                </NavLink>
-              </div>
-            )}
-          </div>
-          <div className="home-frase">
+          <NavLink to="/subscribe" className="home-frase">
             <h4 className="home-conv">
-              <NavLink className="home-link" to="/subscribe">
-                Inscreva-se
-              </NavLink>{" "}
-              e vamos viver o extraordinário
             </h4>
-          </div>
+          </NavLink>
           <div className="home-comment">
             {user && <Crud />}
             <div className="todo-container">

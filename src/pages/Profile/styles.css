@@ -51,3 +51,14 @@
     color: var(--bg-color);
     background-color: var(--font-color);
 }
+
+
+@media screen and (max-width: 768px) {
+    .profile-content {
+        width: 80vw;
+    }
+
+    .profile-select {
+        width: 50vw;
+    }
+}

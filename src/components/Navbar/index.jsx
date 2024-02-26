@@ -28,8 +28,8 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item-res">
-              <NavLink to="/cults" className="nav-item">
-                Cultos
+              <NavLink to="/events" className="nav-item">
+                Eventos
               </NavLink>
             </li>
             <li className="nav-item-res">

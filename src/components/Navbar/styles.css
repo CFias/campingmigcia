@@ -49,36 +49,24 @@
   text-decoration: none;
   color: var(--font-color);
   padding: 10px;
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: var(--border-def);
   border-left: none
 }
 
 .nav-item-reg {
-  border: var(--border-def);
   border-right: none;
   padding: 10px;
-  border-radius: 3px;
   display: flex;
   justify-content: center;
   color: var(--font-color);
   text-decoration: none;
-  background: brown;
   transition: 250ms;
 }
 
-.nav-item-reg:hover {
-  background: var(--font-color);
-  color: var(--bg-color);
-}
-
-.nav-item-nu:hover {
-  background: var(--font-color);
-  color: var(--bg-color);
-  transition: 250ms;
+.nav-item-reg:hover, .nav-item-nu:hover {
+  color: brown;
 }
 
 .nav-mobile {

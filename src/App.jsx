@@ -54,7 +54,7 @@ function App() {
             />
             <Route
               path="/profile"
-              element={user ? <Profile /> : <Navigate to="/" />}
+              element={user ? <Profile /> : <Login />}
             />
             <Route
               path="/subscribe"
@@ -62,7 +62,7 @@ function App() {
             />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/cults" element={<Cults />} />
+            <Route path="/events" element={<Cults />} />
             <Route path="/about" element={<About />} />
           </Routes>
           <BottomBar />
