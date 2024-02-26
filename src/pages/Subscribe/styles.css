@@ -1,0 +1,47 @@
+.subscribe-container {
+}
+
+.subscribe-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.subscribe-items {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--font-color);
+    background: var(--bg-color);
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+}
+
+input {
+    background: var(--btn-color);
+    border: none;
+    padding: 6px;
+    width: 40vw;
+    color: var(--font-color);
+    border-radius: 5px;
+}
+
+label {
+    text-align: center;
+}

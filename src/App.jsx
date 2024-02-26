@@ -56,11 +56,14 @@ function App() {
               path="/profile"
               element={user ? <Profile /> : <Navigate to="/" />}
             />
+            <Route
+              path="/subscribe"
+              element={user ? <Subscribe /> : <Navigate to="/" />}
+            />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cults" element={<Cults />} />
             <Route path="/about" element={<About />} />
-            <Route path="/subscribe" element={<Subscribe />} />
           </Routes>
           <BottomBar />
         </BrowserRouter>
