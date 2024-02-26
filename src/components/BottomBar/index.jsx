@@ -12,6 +12,7 @@ import {
   Share,
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
+import { Avatar } from "@mui/material";
 
 export default function BottomBar() {
   return (
@@ -30,9 +31,9 @@ export default function BottomBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/cults" className="nav-item">
+          <NavLink to="/events" className="nav-item">
             <DateRange />
-            <p className="nav-name">Cultos</p>
+            <p className="nav-name">Eventos</p>
           </NavLink>
         </li>
         <li>
@@ -42,9 +43,9 @@ export default function BottomBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className="nav-item">
-            <Info />
-            <p className="nav-name">Acerca</p>
+          <NavLink to="/profile" className="nav-item">
+            <Person />
+            <p className="nav-name">Perfil</p>
           </NavLink>
         </li>
       </ul>

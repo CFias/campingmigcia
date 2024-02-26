@@ -17,7 +17,6 @@
     background: var(--bg-color);
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
-    width: 70vw;
     text-align: center;
 }
 
@@ -47,10 +46,10 @@
 
 .subscribe-btn {
     background: brown;
-    width: 25vw;
+    width: 35vw;
     border-radius: 5px;
     border: none;
-    padding: 8px;
+    padding: 10px;
     color: var(--font-color);
     font-weight: 700;
     cursor: pointer;
@@ -68,7 +67,6 @@
 
 .subscribe-ps {
     display: flex;
-    width: 60vw;
     justify-content: space-between;
 }
 
@@ -79,22 +77,22 @@
 }
 
 .subscribe-in {
-    width: 15px;
+    width: 2vw;
 }
 
-input, textarea, select {
+.subscribe-i, select {
     background: var(--btn-color);
     border: none;
     padding: 6px;
-    width: 40vw;
+    width: 35vw;
     color: var(--font-color);
     border-radius: 5px;
 }
 
-label {
+.subscribe-la {
     border-bottom: 1px solid var(--btn-color);
     padding: 10px;
-    width: 60vw;
+    width: 36vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,10 +101,28 @@ label {
         font-size: 14px;
         width: 80vw;
         text-align: center;
+        justify-content: center;
     }
 
     .subscribe-token1 {
         font-size: 16px;
+        width: 80vw;
+    }
+
+    .subscribe-i {
+        width: 55vw;
+    }
+
+    .subscribe-in {
+        width: 10vw;
+    }
+
+    .subscribe-la {
+        width: 60vw;
+    }
+
+    .subscribe-ps {
+        font-size: 12px;
     }
 
 }

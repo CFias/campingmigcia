@@ -4,9 +4,12 @@ import { storage } from "../../services/FirebaseConfig";
 import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
 import { Avatar } from "@mui/material";
 import { useAuthValue } from "../../contexts/AuthContext";
+import { NavLink } from "react-router-dom";
+import { useAuthentication } from "../../hooks/useAuthentication";
 
 export default function Profile() {
   const { user } = useAuthValue();
+  const { logout } = useAuthentication();
 
   const [image, setImage] = React.useState(null);
   const [url, setUrl] = React.useState(null);
@@ -41,6 +44,9 @@ export default function Profile() {
         {user && (
           <div className="profile-content">
             <Avatar src={url} alt="" sx={{ width: 150, height: 150 }} />
+            <div className="profile-bio">
+              <h2>{user.displayName}</h2>
+            </div>
             <input
               className="profile-select"
               type="file"
@@ -49,9 +55,9 @@ export default function Profile() {
             <button className="profile-btn" onClick={handleSubmit}>
               Alterar
             </button>
-            <div className="profile-bio">
-              <h2>{user.displayName}</h2>
-            </div>
+            <NavLink onClick={logout} className="nav-item">
+              Sair
+            </NavLink>
           </div>
         )}
       </div>

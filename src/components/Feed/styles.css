@@ -18,9 +18,9 @@
 }
 
 .home-frase {
-  background-image: url("../../assets/imagens/cardmig.png");
+  background-image: url("../../assets/imagens/migcard.png");
   background-position: center;
-  background-size: 1300px;
+  background-size: 1000px;
   width: 55vw;
   height: 28vh;
   border-radius: 10px;
@@ -28,6 +28,11 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  transition: 350ms;
+}
+
+.home-frase:hover {
+  background-size: 1050px;
 }
 
 .home-date {
@@ -162,12 +167,16 @@
   }
 
   .home-frase {
-    background-image: url("../../assets/imagens/cardmigmob.png");
+    background-image: url("../../assets/imagens/migcard.png");
     width: 90vw;
     height: 30vh;
     padding: 2px;
     margin-top: 0;
-    background-size: 2000px;
+    background-size: 600px;
+  }
+
+  .home-frase:hover {
+    background-size: 650px;
   }
 
   .home-name {
