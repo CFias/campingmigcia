@@ -1,10 +1,8 @@
-.subscribe-container {
-}
+.subscribe-container {}
 
 .subscribe-content {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 150px;
 }
 
@@ -19,13 +17,27 @@
     background: var(--bg-color);
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+    width: 70vw;
+    text-align: center;
+}
+
+.subscribe-token1 {
+    color: brown;
+    font-size: 22px;
+    padding: 10px;
 }
 
 .subscribe-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 0;
+    gap: 10px;
+}
+
+.subscribe-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -33,7 +45,44 @@
     display: flex;
 }
 
-input {
+.subscribe-btn {
+    background: brown;
+    width: 25vw;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    color: var(--font-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.subscribe-btn:hover {
+    background: var(--font-color);
+    color: var(--bg-color);
+}
+
+.subscribe-p {
+    font-size: 14px;
+}
+
+.subscribe-ps {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+}
+
+.subscribe-pe {
+    color: brown;
+    font-size: 16px;
+    text-align: center;
+}
+
+.subscribe-in {
+    width: 15px;
+}
+
+input, textarea, select {
     background: var(--btn-color);
     border: none;
     padding: 6px;
@@ -43,5 +92,21 @@ input {
 }
 
 label {
-    text-align: center;
+    border-bottom: 1px solid var(--btn-color);
+    padding: 10px;
+    width: 60vw;
+}
+
+@media screen and (max-width: 768px) {
+    .subscribe-items {
+        padding: 80px;
+        font-size: 14px;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .subscribe-token1 {
+        font-size: 16px;
+    }
+
 }

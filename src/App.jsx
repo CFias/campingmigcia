@@ -58,7 +58,7 @@ function App() {
             />
             <Route
               path="/subscribe"
-              element={user ? <Subscribe /> : <Navigate to="/" />}
+              element={user ? <Subscribe /> : <Register />}
             />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
