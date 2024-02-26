@@ -42,7 +42,7 @@
 }
 
 .nav-item:hover {
-  color: white;
+  color: brown;
 }
 
 .nav-item-nu {
@@ -89,6 +89,13 @@
   color: brown;
 }
 
+.profile-img-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  text-decoration: none;
+}
+
 .nav-user-desk {
   color: var(--font-color);
   font-weight: 700;
@@ -100,11 +107,6 @@
   border-radius: 50%;
 }
 
-.profile-img-icon {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
 
 @media screen and (max-width: 768px) {
   .header-container {

@@ -9,7 +9,6 @@ export default function Todo({
   handleDelete,
   handleEdit,
 }) {
-
   const { user } = useAuthValue();
   const [newTitle, setNewTitle] = React.useState(todo.title);
 

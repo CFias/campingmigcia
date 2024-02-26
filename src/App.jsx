@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Cults from "./pages/Cults";
 import About from "./pages/About";
 import BottomBar from "./components/BottomBar";
+import Subscribe from "./pages/Subscribe";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -54,6 +55,10 @@ function App() {
             <Route
               path="/profile"
               element={user ? <Profile /> : <Navigate to="/" />}
+            />
+            <Route
+              path="/subscribe"
+              element={user ? <Subscribe /> : <Navigate to="/" />}
             />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />

@@ -6,6 +6,7 @@ export default function Cults() {
     <div className="cults-container">
       <div className="cults-content">
         <h2 className="cults-title">Nossos Cultos</h2>
+        
       </div>
     </div>
   );
