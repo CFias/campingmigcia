@@ -16,6 +16,8 @@ import Cults from "./pages/Cults";
 import About from "./pages/About";
 import BottomBar from "./components/BottomBar";
 import Subscribe from "./pages/Subscribe";
+import Interation from "./pages/Interation";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -42,6 +44,7 @@ function App() {
       <AuthProvider value={{ user }}>
         <BrowserRouter>
           <Navbar />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route
@@ -52,13 +55,14 @@ function App() {
               path="/register"
               element={!user ? <Register /> : <Navigate to="/" />}
             />
-            <Route
-              path="/profile"
-              element={user ? <Profile /> : <Login />}
-            />
+            <Route path="/profile" element={user ? <Profile /> : <Login />} />
             <Route
               path="/subscribe"
-              element={user ? <Subscribe /> : <Register />}
+              element={user ? <Subscribe /> : <Navigate to="/" />}
+            />
+            <Route
+              path="/interation"
+              element={user ? <Interation /> : <Login />}
             />
             <Route path="/redes" element={<Redes />} />
             <Route path="/contact" element={<Contact />} />
