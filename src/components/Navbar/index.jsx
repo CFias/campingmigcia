@@ -42,6 +42,14 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item-res">
+              <NavLink
+                to="/interation"
+                className="nav-item"
+              >
+                Interação
+              </NavLink>
+            </li>
+            <li className="nav-item-res">
               <NavLink to="about" className="nav-item">
                 Acerca
               </NavLink>

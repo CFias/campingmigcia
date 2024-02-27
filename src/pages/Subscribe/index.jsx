@@ -1,23 +1,19 @@
 import React from "react";
 import "./styles.css";
 import { useForm } from "react-hook-form";
-import { useAuthValue } from "../../contexts/AuthContext";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../services/FirebaseConfig";
 
 export default function Subscribe() {
-  const { user } = useAuthValue();
-  const cod = user.uid;
 
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = async (data) => {
     if (data !== "") {
       await addDoc(collection(db, "subs"), {
-        // Aqui você pode realizar o envio dos dados
         data,
       });
-      reset(); // Resetar o formulário após o envio
+      reset();
     }
   };
 
@@ -32,20 +28,10 @@ export default function Subscribe() {
           </label>
           <p className="subscribe-p">Sexo</p>
           <label className="subscribe-la" required>
-            F
-            <input
-              className="subscribe-in"
-              {...register("sexo")}
-              type="checkbox"
-              value="F"
-            />
-            M
-            <input
-              className="subscribe-in"
-              {...register("sexo")}
-              type="checkbox"
-              value="M"
-            />
+            <select className="subscribe-i" {...register("sexo")}>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+            </select>
           </label>
           <label className="subscribe-la">
             <p className="subscribe-p">Data de nascimento</p>
@@ -55,24 +41,14 @@ export default function Subscribe() {
               type="date"
             />
           </label>
-          <h2 className="subscribe-token1">
-            Primeira vez no acamp EXTRAORDINÁRIOS ?
-          </h2>
           <label className="subscribe-la" required>
-            SIM
-            <input
-              className="subscribe-in"
-              {...register("primeiraVez")}
-              type="checkbox"
-              value="SIM"
-            />
-            NÃO
-            <input
-              className="subscribe-in"
-              {...register("primeiraVez")}
-              type="checkbox"
-              value="NÃO"
-            />
+            <p className="subscribe-p">
+              Primeira vez no acamp EXTRAORDINÁRIOS ?
+            </p>
+            <select className="subscribe-i" {...register("primeiraVez")}> 
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
           </label>
           <label className="subscribe-la">
             <p className="subscribe-p">Endereço</p>
@@ -308,9 +284,9 @@ export default function Subscribe() {
               type="text"
             />
           </label>
-          <label>
+          <label className="subscribe-la">
             <p className="subscribe-p">Usuário de Alopatia ou Homeopatia</p>
-            <select className="subscribe-la" {...register("tipoTratamento")}>
+            <select className="subscribe-i" {...register("tipoTratamento")}>
               <option value="Alopatia">Alopatia</option>
               <option value="Homeopatia">Homeopatia</option>
               <option value="nao">Não sou</option>
@@ -326,9 +302,9 @@ export default function Subscribe() {
               type="text"
             />
           </label>
-          <label>
+          <label className="subscribe-la">
             <p className="subscribe-p">SABE NADAR?</p>
-            <select className="subscribe-la" {...register("sabeNadar")}>
+            <select className="subscribe-i" {...register("sabeNadar")}>
               <option value="Sim">Sim</option>
               <option value="Não">Não</option>
               <option value="Mais ou menos">Mais ou menos</option>
